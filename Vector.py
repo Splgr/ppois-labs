@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import math
 
 class Vector:
@@ -176,17 +175,7 @@ class Vector:
     # Сравнение длин векторов >=
     def __ge__(self, other):
         self._validate_vector(other)
-=======
-import math
 
-class Vector:
-    def __init__(self, x1, y1, z1, x2, y2, z2):
-        # Проверка типов входных данных
-        if not all(isinstance(coord, (int, float)) for coord in [x1, y1, z1, x2, y2, z2]):
-            raise TypeError("Все координаты должны быть числами!")
-        
-        self.x1 = x1
-        self.y1 = y1
         self.z1 = z1
         self.x2 = x2
         self.y2 = y2
@@ -354,5 +343,4 @@ class Vector:
     # Сравнение длин векторов >=
     def __ge__(self, other):
         self._validate_vector(other)
->>>>>>> ad4b95d (класс вектор)
         return self.length >= other.length
